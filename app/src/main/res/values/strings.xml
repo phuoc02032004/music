@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AppMusic</string>
+    <string name="DangNhap">Đăng Nhập</string>
+    <string name="Email">Email</string>
+    <string name="Password">Mật khẩu</string>
+    <string name="QuenMatKhau">Quên mật khẩu?</string>
+    <string name="ChuaCoTK">Chưa có tài khoản?</string>
+    <string name="Dangky">Đăng ký</string>
+    <string name="SDT">Số điện thoại</string>
+    <string name="RePassword">Xác nhận mật khẩu</string>
+    <string name="DaCoTK">Đã có tài khoản?</string>
+    <string name="title_favorite">title_favorite</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_library">Library</string>
+</resources>
