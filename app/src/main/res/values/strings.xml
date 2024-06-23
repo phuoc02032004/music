@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">music app</string>
+
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="repassword">Nhập lại mật khẩu</string>
+    <string name="login">Đăng nhập</string>
+    <string name="no_account">Bạn chưa có tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <string name="have_account">Bạn đã có tài khoản?</string>
+    <string name="email">Email</string>
+    <string name="fullname">Tên đầy đủ</string>
+
+</resources>
