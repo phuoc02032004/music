@@ -22,7 +22,8 @@
        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
        app:title="@string/app_name"
        app:titleTextColor="@color/white"
-       app:navigationIcon="@drawable/ic_menu" />
+       app:navigationIcon="@drawable/ic_menu"
+       app:menu="@menu/toolbar_menu"/>
 </com.google.android.material.appbar.AppBarLayout>
 
    <androidx.recyclerview.widget.RecyclerView
