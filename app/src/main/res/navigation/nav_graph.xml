@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.musicapp.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.example.musicapp.fragment.PlaybackFragment"
+        android:label="fragment_player"
+        tools:layout="@layout/fragment_playback" />
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.musicapp.fragment.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
+
+    <action
+        android:id="@+id/action_searchFragment_to_playbackFragment"
+        app:destination="@id/playerFragment" />
+
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.example.musicapp.fragment.UserFragment"
+        android:label="fragment_user"
+        tools:layout="@layout/fragment_user" />
+
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.musicapp.fragment.PlaylistFragment"
+        android:label="fragment_playlist"
+        tools:layout="@layout/fragment_playlist" />
+
+</navigation>
