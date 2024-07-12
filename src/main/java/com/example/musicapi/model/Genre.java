@@ -2,33 +2,22 @@ package com.example.musicapi.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
 
-import java.util.List;
-
-@Document(collection = "playlists")
-public class Playlist {
+@Document(collection = "genres")
+public class Genre {
     @Id
     private String id;
     private String name;
     private String description;
 
-    @DocumentReference
-    private List<Song> songs;
-
-    @DocumentReference
-    private User createdBy;
-
-    // Constructors
-    public Playlist() {
+    // Constructor
+    public Genre() {
     }
 
-    public Playlist(String id, String name, String description, List<Song> songs, User createdBy) {
+    public Genre(String id, String name, String description) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.songs = songs;
-        this.createdBy = createdBy;
     }
 
     // Getters and Setters
@@ -55,21 +44,4 @@ public class Playlist {
     public void setDescription(String description) {
         this.description = description;
     }
-
-    public List<Song> getSongs() {
-        return songs;
-    }
-
-    public void setSongs(List<Song> songs) {
-        this.songs = songs;
-    }
-
-    public User getCreatedBy() {
-        return createdBy;
-    }
-
-    public void setCreatedBy(User createdBy) {
-        this.createdBy = createdBy;
-    }
-
 }

@@ -12,7 +12,7 @@ public class User {
     @Id
     private String id;
     private String username;
-    private String passwordHash;
+    private String password;
     private String name;
     private String email;
     private LocalDate createdAt;
@@ -20,9 +20,11 @@ public class User {
     private List<Playlist> playlists;
     private List<String> likedSongs;
     private List<RecentlyPlayed> recentlyPlayed;
+    private String fileName;
+    private String imageFileName;
+    private String imageFilePath;
 
 
-    // No-args constructor
     public User() {}
 
     // Getters
@@ -34,8 +36,8 @@ public class User {
         return username;
     }
 
-    public String getPasswordHash() {
-        return passwordHash;
+    public String getPassword() {
+        return password;
     }
 
     public String getName() {
@@ -75,8 +77,8 @@ public class User {
         this.username = username;
     }
 
-    public void setPasswordHash(String passwordHash) {
-        this.passwordHash = passwordHash;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public void setName(String name) {
@@ -104,5 +106,29 @@ public class User {
 
     public void setRecentlyPlayed(List<RecentlyPlayed> recentlyPlayed) {
         this.recentlyPlayed = recentlyPlayed;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
+
+    public String getImageFileName() {
+        return imageFileName;
+    }
+
+    public void setImageFileName(String imageFileName) {
+        this.imageFileName = imageFileName;
+    }
+
+    public String getImageFilePath() {
+        return imageFilePath;
+    }
+
+    public void setImageFilePath(String imageFilePath) {
+        this.imageFilePath = imageFilePath;
     }
 }

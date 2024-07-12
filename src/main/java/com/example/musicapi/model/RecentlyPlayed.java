@@ -1,7 +1,9 @@
 package com.example.musicapi.model;
 
-import java.util.Date;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+@Document(collection = "recentlyplayeds")
 public class RecentlyPlayed {
     private String songId;
     private Date playedAt;
